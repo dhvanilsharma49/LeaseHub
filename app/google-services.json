@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "434326055573",
+    "firebase_url": "https://leasehub-3967f-default-rtdb.firebaseio.com",
+    "project_id": "leasehub-3967f",
+    "storage_bucket": "leasehub-3967f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:434326055573:android:78a527c49b59381ceb899c",
+        "android_client_info": {
+          "package_name": "com.example.leasehub"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "434326055573-vcapno0eag4nrs7r9bh0uk4tcrr3naj1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyALAjIqULP4nAow0gW0RhiEJB-Sy9W7fj0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "434326055573-vcapno0eag4nrs7r9bh0uk4tcrr3naj1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

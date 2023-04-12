@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editot_absolutey="0dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".AddPropertyActivity">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/AddProperty"
+            android:textSize="30dp"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            />
+
+        <EditText
+            style="@style/edSignUpStyle"
+            android:id="@+id/edPropSize"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Property Size"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvTitle"
+            android:background="@drawable/edit_text_design"
+            />
+
+        <EditText
+            style="@style/edSignUpStyle"
+            android:id="@+id/edPropDesc"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Description"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edPropSize"
+            android:background="@drawable/edit_text_design"
+            />
+        <EditText
+            style="@style/edSignUpStyle"
+            android:id="@+id/edPropAddress"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Address"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edPropDesc"
+            android:background="@drawable/edit_text_design"
+            />
+
+        <EditText
+            style="@style/edSignUpStyle"
+            android:id="@+id/edAmenities"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Amenities"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edPropAddress"
+            android:background="@drawable/edit_text_design"
+            />
+        <EditText
+            style="@style/edSignUpStyle"
+            android:id="@+id/edPropRent"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Monthly Rent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edAmenities"
+            android:background="@drawable/edit_text_design"
+            />
+
+        <TextView
+            android:id="@+id/tvPropType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Property Type"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edPropRent"
+
+            />
+
+
+
+        <RadioGroup
+            android:id="@+id/rgPropType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tvPropType"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal"
+            >
+
+            <RadioButton
+                android:id="@+id/rbHouse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="House"
+                android:buttonTint="@color/black"
+                android:layout_marginRight="20dp"
+                android:checked="true"
+                />
+
+            <RadioButton
+                android:id="@+id/rbBasement"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Basement"
+                android:buttonTint="@color/black"
+                android:layout_marginRight="20dp"
+                />
+
+            <RadioButton
+                android:id="@+id/rbApartment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/black"
+                android:text="Apartment" />
+        </RadioGroup>
+
+        <ImageView
+            android:id="@+id/imgProperty"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/rgPropType"
+            android:layout_marginTop="10dp"
+            app:srcCompat="@drawable/ic_baseline_add_circle_outline_24" />
+
+        <android.widget.Button
+            android:id="@+id/btnRegister"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginTop="20sp"
+            android:textAllCaps="false"
+            android:text="Add Property"
+            android:textColor="@drawable/button_text_color"
+            android:background="@drawable/button_selector"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            app:layout_constraintTop_toBottomOf="@id/imgProperty"
+            android:layout_marginBottom="30dp"
+            />
+
+        <TextView
+            android:id="@+id/tvemplty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnRegister"
+
+            />
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
+
+

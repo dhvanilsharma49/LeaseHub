@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">LeaseHub</string>
+    <string name="AppTitle">Welcome to\nLeaseHub</string>
+    <string name="AddProperty">Enter property details</string>
+    <string name="tag_line">An easy solution of renting\nand managing properties.</string>
+    <string name="terms_conditions">By clicking SignUp you agree all the\n Terms and Conditions.</string>
+</resources>

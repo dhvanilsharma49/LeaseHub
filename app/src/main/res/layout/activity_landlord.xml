@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/house"
+    tools:context=".LandlordActivity">
+
+    <TextView
+        android:id="@+id/tvUserName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Welcome : "
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textStyle="normal|bold"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+
+    <android.widget.Button
+        android:id="@+id/btnUploadProp"
+        android:layout_width="350dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/tvUserName"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button"
+        android:text="Add Property"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:textSize="20sp" />
+
+    <android.widget.Button
+        android:id="@+id/btnViewEnquires"
+        android:layout_width="350dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/btnUploadProp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button"
+        android:text="View Enquiries"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:textSize="20sp" />
+
+    <android.widget.Button
+        android:id="@+id/btnViewProperties"
+        android:layout_width="350dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/btnViewEnquires"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button"
+        android:text="View Properties"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:textSize="20sp" />
+
+    <android.widget.Button
+        android:id="@+id/btnViewTenants"
+        android:layout_width="350dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/btnViewProperties"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button"
+        android:text="View Tenants"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:textSize="20sp" />
+
+    <android.widget.Button
+        android:id="@+id/btnLogout"
+        android:layout_width="350dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/btnViewTenants"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button"
+        android:text="Log Out"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:textSize="20sp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
